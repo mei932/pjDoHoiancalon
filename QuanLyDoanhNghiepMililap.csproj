@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D6075E7-E462-402F-8267-64A48A2DA5BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyDoanhNghiepMililap</RootNamespace>
+    <AssemblyName>QuanLyDoanhNghiepMililap</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus.Core, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.Core.1.5.4\lib\net46\EPPlus.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chitiethoadonbanhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chitiethoadonbanhang.Designer.cs">
+      <DependentUpon>chitiethoadonbanhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChinh.Designer.cs">
+      <DependentUpon>fChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDichVu.Designer.cs">
+      <DependentUpon>fDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDoanhThuTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDoanhThuTheoThang.Designer.cs">
+      <DependentUpon>fDoanhThuTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDonDatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDonDatHang.Designer.cs">
+      <DependentUpon>fDonDatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDonDatHangg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDonDatHangg.Designer.cs">
+      <DependentUpon>fDonDatHangg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHoaDon.Designer.cs">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang.Designer.cs">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLoaiDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLoaiDV.Designer.cs">
+      <DependentUpon>fLoaiDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLoaiVT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLoaiVT.Designer.cs">
+      <DependentUpon>fLoaiVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNCC.Designer.cs">
+      <DependentUpon>fNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhieuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhieuChi.Designer.cs">
+      <DependentUpon>fPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDoanhThuTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDoanhThuTheoNgay.Designer.cs">
+      <DependentUpon>fDoanhThuTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThongKeKhachHangVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThongKeKhachHangVip.Designer.cs">
+      <DependentUpon>fThongKeKhachHangVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThongKeVatTuHetTrongKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThongKeVatTuHetTrongKho.Designer.cs">
+      <DependentUpon>fThongKeVatTuHetTrongKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThongKeVatTuTrongKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThongKeVatTuTrongKho.Designer.cs">
+      <DependentUpon>fThongKeVatTuTrongKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fVatTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fVatTu.Designer.cs">
+      <DependentUpon>fVatTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hoadongiaohang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hoadongiaohang.Designer.cs">
+      <DependentUpon>hoadongiaohang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify\connection.cs" />
+    <Compile Include="Modify\modifiall.cs" />
+    <Compile Include="Modify\Program.cs" />
+    <Compile Include="Object\banhang_chitietdondathang.cs" />
+    <Compile Include="Object\chitiet.cs" />
+    <Compile Include="Object\dondathang.cs" />
+    <Compile Include="Object\giaohang.cs" />
+    <Compile Include="Object\kho.cs" />
+    <Compile Include="Object\phieuchi.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tblkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tblkho.Designer.cs">
+      <DependentUpon>tblkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tblPhieuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tblPhieuChi.Designer.cs">
+      <DependentUpon>tblPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="thongkevattu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongkevattu.Designer.cs">
+      <DependentUpon>thongkevattu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chitiethoadonbanhang.resx">
+      <DependentUpon>chitiethoadonbanhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChinh.resx">
+      <DependentUpon>fChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDichVu.resx">
+      <DependentUpon>fDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDoanhThuTheoThang.resx">
+      <DependentUpon>fDoanhThuTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDonDatHang.resx">
+      <DependentUpon>fDonDatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDonDatHangg.resx">
+      <DependentUpon>fDonDatHangg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhachHang.resx">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLoaiDV.resx">
+      <DependentUpon>fLoaiDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLoaiVT.resx">
+      <DependentUpon>fLoaiVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNCC.resx">
+      <DependentUpon>fNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhieuChi.resx">
+      <DependentUpon>fPhieuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDoanhThuTheoNgay.resx">
+      <DependentUpon>fDoanhThuTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThongKeKhachHangVip.resx">
+      <DependentUpon>fThongKeKhachHangVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThongKeVatTuHetTrongKho.resx">
+      <DependentUpon>fThongKeVatTuHetTrongKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThongKeVatTuTrongKho.resx">
+      <DependentUpon>fThongKeVatTuTrongKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fVatTu.resx">
+      <DependentUpon>fVatTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hoadongiaohang.resx">
+      <DependentUpon>hoadongiaohang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tblkho.resx">
+      <DependentUpon>tblkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tblPhieuChi.resx">
+      <DependentUpon>tblPhieuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="thongkevattu.resx">
+      <DependentUpon>thongkevattu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4983125631437_0b97d76e912fb910790f61109e4442d2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4983125631437_0b97d76e912fb910790f61109e4442d21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4983125631437_0b97d76e912fb910790f61109e4442d22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
