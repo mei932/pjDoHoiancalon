@@ -16,7 +16,7 @@ namespace QuanLyDoanhNghiepMililap
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fDonDatHangg());
+            Application.Run(new fChinh());
         }
     }
 }

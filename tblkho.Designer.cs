@@ -33,7 +33,13 @@ namespace QuanLyDoanhNghiepMililap
             this.label1 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtSLTK = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtMaLoai = new System.Windows.Forms.TextBox();
+            this.txtGiaNhap = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtGiaBan = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -45,12 +51,6 @@ namespace QuanLyDoanhNghiepMililap
             this.dgvKhachhang = new System.Windows.Forms.DataGridView();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtGiaNhap = new System.Windows.Forms.TextBox();
-            this.txtMaLoai = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtSLTK = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -108,12 +108,60 @@ namespace QuanLyDoanhNghiepMililap
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập thông tin ";
             // 
+            // txtSLTK
+            // 
+            this.txtSLTK.Location = new System.Drawing.Point(484, 54);
+            this.txtSLTK.Name = "txtSLTK";
+            this.txtSLTK.Size = new System.Drawing.Size(207, 20);
+            this.txtSLTK.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(395, 57);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Số lượng tồn kho";
+            // 
+            // txtMaLoai
+            // 
+            this.txtMaLoai.Location = new System.Drawing.Point(94, 93);
+            this.txtMaLoai.Name = "txtMaLoai";
+            this.txtMaLoai.Size = new System.Drawing.Size(256, 20);
+            this.txtMaLoai.TabIndex = 16;
+            // 
+            // txtGiaNhap
+            // 
+            this.txtGiaNhap.Location = new System.Drawing.Point(94, 133);
+            this.txtGiaNhap.Name = "txtGiaNhap";
+            this.txtGiaNhap.Size = new System.Drawing.Size(256, 20);
+            this.txtGiaNhap.TabIndex = 15;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 140);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Giá nhập";
+            // 
             // txtGiaBan
             // 
             this.txtGiaBan.Location = new System.Drawing.Point(484, 20);
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.Size = new System.Drawing.Size(207, 20);
             this.txtGiaBan.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Mã loại vật tư";
             // 
             // label3
             // 
@@ -214,58 +262,12 @@ namespace QuanLyDoanhNghiepMililap
             this.btnSua.UseVisualStyleBackColor = true;
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Mã loại vật tư";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 140);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Giá nhập";
-            // 
-            // txtGiaNhap
-            // 
-            this.txtGiaNhap.Location = new System.Drawing.Point(94, 133);
-            this.txtGiaNhap.Name = "txtGiaNhap";
-            this.txtGiaNhap.Size = new System.Drawing.Size(256, 20);
-            this.txtGiaNhap.TabIndex = 15;
-            // 
-            // txtMaLoai
-            // 
-            this.txtMaLoai.Location = new System.Drawing.Point(94, 93);
-            this.txtMaLoai.Name = "txtMaLoai";
-            this.txtMaLoai.Size = new System.Drawing.Size(256, 20);
-            this.txtMaLoai.TabIndex = 16;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(395, 57);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 13);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Số lượng tồn kho";
-            // 
-            // txtSLTK
-            // 
-            this.txtSLTK.Location = new System.Drawing.Point(484, 54);
-            this.txtSLTK.Name = "txtSLTK";
-            this.txtSLTK.Size = new System.Drawing.Size(207, 20);
-            this.txtSLTK.TabIndex = 18;
-            // 
             // tblkho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnXoa);
@@ -273,7 +275,9 @@ namespace QuanLyDoanhNghiepMililap
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnSua);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "tblkho";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "tblkho";
             this.Load += new System.EventHandler(this.tblkho_Load);
             this.groupBox1.ResumeLayout(false);

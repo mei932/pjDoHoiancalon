@@ -44,6 +44,8 @@ namespace QuanLyDoanhNghiepMililap
         {
             /*fHoaDon fhoadon = new fHoaDon();
             fhoadon.Show();*/
+            chitiethoadonbanhang tc = new chitiethoadonbanhang();
+            tc.Show();
         }
 
         private void MenuLoaiVT_Click(object sender, EventArgs e)
@@ -122,8 +124,7 @@ namespace QuanLyDoanhNghiepMililap
 
         private void hóaĐơnBánHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            chitiethoadonbanhang tc = new chitiethoadonbanhang();
-            tc.Show();
+           
         }
 
         private void MenuNhapKho_Click(object sender, EventArgs e)
